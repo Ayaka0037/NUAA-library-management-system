@@ -1,0 +1,47 @@
+# Qt / C++ build artifacts
+release/
+debug/
+build/
+*.o
+*.obj
+*.exe
+moc_*.cpp
+moc_predefs.h
+qrc_*.cpp
+ui_*.h
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release
+object_script.*
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+.qmake.cache
+.qmake.stash
+.qtc_clangd/
+
+# IDE
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Claude Code (local paths, settings)
+.claude/
+
+# Compiled resources
+*.qm
+
+# RCC generated
+qrc_*.cpp
+
+# Linker
+*.ilk
+*.exp
+*.lib
+*.dll
+*.a

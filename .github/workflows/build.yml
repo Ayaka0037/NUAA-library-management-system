@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.*'
+          arch: 'win64_mingw'
+
+      - name: qmake
+        run: qmake untitled1.pro
+
+      - name: make
+        run: mingw32-make -j4
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LibraryManager
+          path: release/untitled1.exe
