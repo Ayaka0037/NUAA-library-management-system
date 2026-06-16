@@ -51,13 +51,9 @@
   5. 统计看板（7 指标卡片）
 -->
 
-| 登录 | 主界面 |
-|:---:|:---:|
-| ![](screenshots/login.png) | ![](screenshots/main.png) |
-
-| 图书管理 | 统计看板 |
-|:---:|:---:|
-| ![](screenshots/books.png) | ![](screenshots/stats.png) |
+| 登录 | 主界面 | 图书管理 |
+|:---:|:---:|:---:|
+| ![](screenshots/login.png) | ![](screenshots/main.png) | ![](screenshots/books.png) |
 
 ## 🛠️ 技术栈
 
