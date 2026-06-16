@@ -19,7 +19,7 @@ jobs:
           arch: 'win64_mingw'
 
       - name: qmake
-        run: qmake untitled1.pro
+        run: qmake library-management-system.pro
 
       - name: make
         run: mingw32-make -j4
@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: LibraryManager
-          path: release/untitled1.exe
+          path: release/library-management-system.exe

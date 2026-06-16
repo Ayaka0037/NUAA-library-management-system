@@ -25,7 +25,7 @@ $env:Path = "<Qt路径>\mingw_64\bin;<Qt路径>\mingw_64\libexec;<Qt路径>\Tool
 cd <项目目录>
 
 # 首次构建或 .pro 改动后需要 qmake
-qmake untitled1.pro
+qmake library-management-system.pro
 
 # 增量构建
 mingw32-make -j4
@@ -44,7 +44,7 @@ mingw32-make -j4
 
 ### 5. 构建成功后
 ```powershell
-.\release\untitled1.exe
+.\release\library-management-system.exe
 ```
 
 ## 项目结构
@@ -65,7 +65,7 @@ mingw32-make -j4
 ├── statswindow.h/.cpp          # 统计看板（7 指标卡片）
 ├── logwindow.h/.cpp            # 操作日志查看
 ├── loghelper.h/.cpp            # 日志写入工具（static）
-├── untitled1.pro               # qmake 项目文件
+├── library-management-system.pro  # qmake 项目文件
 ├── README.md                   # GitHub 项目首页
 ├── LICENSE                     # MIT
 └── .gitignore
@@ -177,11 +177,11 @@ mingw32-make -j4
 
 ### 新增/删除了文件
 ```powershell
-qmake untitled1.pro
+qmake library-management-system.pro
 mingw32-make -j4
 ```
 
-新增文件后还需编辑 `untitled1.pro`，在 `SOURCES` / `HEADERS` 中添加对应条目。
+新增文件后还需编辑 `library-management-system.pro`，在 `SOURCES` / `HEADERS` 中添加对应条目。
 
 ## 已知问题
 1. `logindialog.cpp` — 登录日志在认证前记录，此时 m_userId = -1

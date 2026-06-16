@@ -74,7 +74,7 @@ untitled1/
 ├── statswindow.h/.cpp          # 统计看板
 ├── logwindow.h/.cpp            # 操作日志
 ├── loghelper.h/.cpp            # 日志写入工具
-├── untitled1.pro               # qmake 项目文件
+├── library-management-system.pro  # qmake 项目文件
 └── CLAUDE.md                   # AI 辅助开发文档
 ```
 
@@ -113,11 +113,11 @@ CREATE DATABASE library;
 $env:Path = "D:\QT\6.11.1\mingw_64\bin;D:\QT\6.11.1\mingw_64\libexec;D:\QT\Tools\mingw1310_64\bin;" + $env:Path
 
 # 构建
-qmake untitled1.pro
+qmake library-management-system.pro
 mingw32-make -j4
 
 # 运行
-.\release\untitled1.exe
+.\release\library-management-system.exe
 ```
 
 程序首次启动会自动创建所有表和种子数据。
